@@ -151,39 +151,23 @@
 }
 
 
-/*** Header carousel ***/
+/*** Header carousel responsive fix ***/
 @media (max-width: 768px) {
     .header-carousel .owl-carousel-item {
         position: relative;
-        min-height: 250px; /* mobile ke liye height reduce ki */
-        overflow: hidden;  /* extra part hide ho jaye */
+        min-height: 200px; /* mobile ke liye height reduce ki */
+        overflow: hidden;  /* extra white space hide ho jaye */
     }
-    
+
     .header-carousel .owl-carousel-item img {
         width: 100%;
-        height: auto;       /* aspect ratio maintain rahe */
-        object-fit: cover;  /* container cover kare, crop minimal */
+        height: auto;      /* aspect ratio maintain ho */
+        object-fit: cover;  /* container cover kare */
         display: block;
-        margin: 0 auto;    /* center align */
-        position: relative; /* absolute nahi rakhna */
+        margin: 0 auto;
+        position: relative; /* absolute remove kiya */
     }
 }
-
-.page-header {
-    background: linear-gradient(rgba(24, 29, 56, .7), rgba(24, 29, 56, .7)), url(../img/carousel-1.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.page-header-inner {
-    background: rgba(15, 23, 43, .7);
-}
-
-.breadcrumb-item + .breadcrumb-item::before {
-    color: var(--light);
-}
-
 
 /*** Section Title ***/
 .section-title {
