@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MS Office Course - Prema Computer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="MS Office Course, Word, Excel, PowerPoint, Bhopal" name="keywords">
+    <meta content="Learn MS Office at Prema Computer, Bhopal - Word, Excel, PowerPoint & more" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	
+	<style>
+        :root {
+            --primary: #06BBCC;
+            --dark: #0d1b2a;
+            --accent: #c00000;
+            --gold: #f4a833;
+            --light-bg: #f8fbff;
+        }
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Heebo', sans-serif;
+            background: #fff;
+            color: #333;
+        }
+
+
+        /* ── HERO BANNER ── */
+        .course-hero {
+            background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 50%, #06BBCC22 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0 60px;
+        }
+        .course-hero::before {
+            content: '';
+            position: absolute;
+            top: -80px; right: -80px;
+            width: 420px; height: 420px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #06BBCC33 0%, transparent 70%);
+        }
+        .course-hero::after {
+            content: 'MS';
+            position: absolute;
+            right: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 220px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            color: rgba(255,255,255,0.04);
+            line-height: 1;
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: #0d1b2a;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 16px;
+            border-radius: 30px;
+            margin-bottom: 18px;
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.15;
+        }
+        .hero-title span { color: var(--primary); }
+        .hero-desc { color: #a8c7d8; font-size: 1.05rem; max-width: 560px; line-height: 1.8; }
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 36px;
+            flex-wrap: wrap;
+        }
+        .stat-box {
+            text-align: center;
+        }
+        .stat-box .num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary);
+            font-family: 'Nunito', sans-serif;
+            line-height: 1;
+        }
+        .stat-box .lbl { font-size: 0.78rem; color: #7aa0b8; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+        .hero-enroll-btn {
+            margin-top: 36px;
+            background: var(--primary);
+            color: #fff;
+            padding: 14px 36px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1rem;
+            border: none;
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 8px 30px rgba(6,187,204,0.35);
+        }
+        .hero-enroll-btn:hover {
+            background: #059aaa;
+            color: #fff;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(6,187,204,0.45);
+        }
+
+        /* ── BREADCRUMB ── */
+        .breadcrumb-section {
+            background: var(--light-bg);
+            padding: 14px 0;
+            border-bottom: 1px solid #e4edf5;
+        }
+        .breadcrumb-item a { color: var(--primary); text-decoration: none; }
+        .breadcrumb-item.active { color: #666; }
+
+        /* ── SECTION TITLE ── */
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--dark);
+            margin-bottom: 8px;
+        }
+        .section-title span { color: var(--primary); }
+        
+
+        /* ── ABOUT COURSE ── */
+        .about-course { padding: 70px 0; background: #fff; }
+        .about-icon-row {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 24px;
+        }
+        .about-chip {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--light-bg);
+            border: 1px solid #ddeef5;
+            padding: 8px 16px;
+            border-radius: 30px;
+            font-size: 0.87rem;
+            font-weight: 600;
+            color: #2a5a74;
+        }
+        .about-chip i { color: var(--primary); }
+
+        .highlight-card {
+            border: none;
+            border-radius: 16px;
+            padding: 28px 24px;
+            height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        .highlight-card::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;
+            width: 4px; height: 100%;
+            background: linear-gradient(180deg, var(--primary), var(--gold));
+            border-radius: 4px 0 0 4px;
+        }
+        .highlight-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 16px 40px rgba(6,187,204,0.12);
+        }
+        .highlight-card.bg-1 { background: #f0fbfd; }
+        .highlight-card.bg-2 { background: #fff8f0; }
+        .highlight-card.bg-3 { background: #f0f8ff; }
+        .highlight-card.bg-4 { background: #fff0f5; }
+        .highlight-card .icon {
+            font-size: 2rem;
+            margin-bottom: 12px;
+        }
+        .highlight-card h5 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1rem; color: var(--dark); }
+        .highlight-card p { font-size: 0.87rem; color: #666; margin: 0; line-height: 1.7; }
+
+        /* ── CURRICULUM ── */
+        .curriculum-section {
+            padding: 70px 0;
+            background: var(--light-bg);
+        }
+
+        .module-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin: 36px 0 40px;
+        }
+        .module-tab {
+            padding: 9px 22px;
+            border-radius: 30px;
+            border: 2px solid #cde8f0;
+            background: #fff;
+            color: #2a5a74;
+            font-weight: 700;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.25s;
+        }
+        .module-tab:hover, .module-tab.active {
+            background: var(--primary);
+            border-color: var(--primary);
+            color: #fff;
+            box-shadow: 0 4px 16px rgba(6,187,204,0.25);
+        }
+
+        .curriculum-panel { display: none; }
+        .curriculum-panel.active { display: block; }
+
+        .module-header {
+            background: linear-gradient(90deg, var(--dark) 0%, #1a3a5c 100%);
+            color: #fff;
+            border-radius: 14px 14px 0 0;
+            padding: 22px 28px;
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .module-header .mod-icon {
+            width: 52px; height: 52px;
+            border-radius: 12px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+        .module-header h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.35rem;
+            margin: 0;
+            font-weight: 800;
+        }
+        .module-header p { margin: 0; font-size: 0.85rem; color: #a8c7d8; }
+        .module-header .mod-duration {
+            margin-left: auto;
+            background: rgba(255,255,255,0.12);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            white-space: nowrap;
+        }
+
+        .topic-list {
+            background: #fff;
+            border: 1px solid #ddeef5;
+            border-top: none;
+            border-radius: 0 0 14px 14px;
+            overflow: hidden;
+        }
+        .topic-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            padding: 14px 24px;
+            border-bottom: 1px solid #eef5fa;
+            transition: background 0.2s;
+        }
+        .topic-item:last-child { border-bottom: none; }
+        .topic-item:hover { background: #f5fbfd; }
+        .topic-num {
+            min-width: 28px; height: 28px;
+            border-radius: 50%;
+            background: var(--primary);
+            color: #fff;
+            font-size: 0.72rem;
+            font-weight: 700;
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .topic-item .topic-text { flex: 1; }
+        .topic-item .topic-title { font-weight: 600; font-size: 0.95rem; color: var(--dark); margin-bottom: 2px; }
+        .topic-item .topic-sub { font-size: 0.82rem; color: #888; }
+        .topic-tag {
+            background: #e8f9fb;
+            color: var(--primary);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 3px 10px;
+            border-radius: 20px;
+            white-space: nowrap;
+            align-self: center;
+        }
+        .topic-tag.adv { background: #fff5e6; color: var(--gold); }
+        .topic-tag.new { background: #ffeaea; color: var(--accent); }
+
+        /* ── TOOLS COVERED ── */
+        .tools-section { padding: 70px 0; background: #fff; }
+        .tool-card {
+            border-radius: 16px;
+            padding: 32px 24px 24px;
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            background: var(--light-bg);
+            position: relative;
+            overflow: hidden;
+        }
+        .tool-card:hover {
+            transform: translateY(-6px);
+            border-color: var(--primary);
+            background: #fff;
+            box-shadow: 0 20px 50px rgba(6,187,204,0.12);
+        }
+        .tool-icon {
+            width: 72px; height: 72px;
+            border-radius: 18px;
+            margin: 0 auto 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 2.2rem;
+        }
+        .tool-card h5 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1.05rem; color: var(--dark); }
+        .tool-card p { font-size: 0.83rem; color: #777; margin: 0; line-height: 1.6; }
+        .tool-version {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            color: var(--primary);
+            background: #e8f9fb;
+            padding: 3px 12px;
+            border-radius: 20px;
+        }
+
+        /* ── WHO SHOULD JOIN ── */
+        .who-section { padding: 70px 0; background: var(--light-bg); }
+        .who-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 28px 22px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        .who-card:hover { transform: translateY(-4px); }
+        .who-card .who-icon {
+            width: 64px; height: 64px;
+            border-radius: 50%;
+            margin: 0 auto 16px;
+            display: flex; align-items: center; justify-content: center;
+            font-size: 1.8rem;
+        }
+        .who-card h6 { font-family: 'Nunito', sans-serif; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+        .who-card p { font-size: 0.83rem; color: #777; margin: 0; }
+
+        /* ── OUTCOMES ── */
+        .outcomes-section { padding: 70px 0; background: linear-gradient(135deg, #0d1b2a 0%, #1a3a5c 100%); }
+        .outcome-item {
+            display: flex;
+            gap: 16px;
+            align-items: flex-start;
+            margin-bottom: 20px;
+        }
+        .outcome-item .check {
+            width: 32px; height: 32px;
+            border-radius: 50%;
+            background: var(--primary);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        .outcome-item p { margin: 0; color: #c8dce8; font-size: 0.95rem; line-height: 1.6; padding-top: 4px; }
+
+        /* ── CERTIFICATION ── */
+        .cert-section { padding: 70px 0; background: #fff; }
+        .cert-card {
+            background: linear-gradient(135deg, #e8f9fb 0%, #fff 60%);
+            border: 2px solid #c6eef3;
+            border-radius: 20px;
+            padding: 40px 36px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cert-card::after {
+            content: '★';
+            position: absolute;
+            right: 30px; top: 20px;
+            font-size: 80px;
+            color: rgba(6,187,204,0.07);
+        }
+        .cert-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: #0d1b2a;
+            font-size: 11px;
+            font-weight: 800;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 16px;
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        /* ── FAQ ── */
+        .faq-section { padding: 70px 0; background: var(--light-bg); }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            margin-bottom: 14px;
+            border: 1px solid #e0eff5;
+            overflow: hidden;
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 22px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 0.95rem;
+            color: var(--dark);
+            gap: 12px;
+        }
+        .faq-question .toggle-icon {
+            width: 28px; height: 28px;
+            border-radius: 50%;
+            background: var(--light-bg);
+            display: flex; align-items: center; justify-content: center;
+            flex-shrink: 0;
+            font-size: 1rem;
+            color: var(--primary);
+            transition: transform 0.3s;
+        }
+        .faq-answer {
+            display: none;
+            padding: 0 22px 18px;
+            font-size: 0.9rem;
+            color: #666;
+            line-height: 1.8;
+        }
+        .faq-item.open .toggle-icon { transform: rotate(45deg); }
+        .faq-item.open .faq-answer { display: block; }
+
+        /* ── CTA ── */
+        .cta-section {
+            padding: 80px 0;
+            background: linear-gradient(120deg, #06BBCC 0%, #0d1b2a 100%);
+            text-align: center;
+        }
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.4rem;
+            color: #fff;
+            font-weight: 800;
+        }
+        .cta-section p { color: rgba(255,255,255,0.8); font-size: 1.05rem; }
+        .cta-btn {
+            display: inline-block;
+            background: var(--gold);
+            color: #0d1b2a;
+            padding: 15px 42px;
+            border-radius: 40px;
+            font-weight: 800;
+            font-size: 1.05rem;
+            text-decoration: none;
+            transition: all 0.3s;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+        }
+        .cta-btn:hover { background: #e09820; color: #0d1b2a; transform: translateY(-2px); }
+
+        /* ── FOOTER ── */
+        .footer { background: var(--dark); }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .module-header { flex-wrap: wrap; }
+            .module-header .mod-duration { margin-left: 0; }
+            .hero-stats { gap: 20px; }
+            .course-hero::after { display: none; }
+        }
+
+        /* ── SCROLL ANIMATION ── */
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+              <img src="img/logo.png" alt="Prema Logo" style="height:40px;">
+              <span class="ms-2 h2 m-0 text-primary">Prema Computer</span>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="msoffice.html" class="dropdown-item">MS Office</a>
+						<a href="team.html" class="dropdown-item">Advance Excel</a>
+						<a href="team.html" class="dropdown-item">Tally</a>
+						<a href="team.html" class="dropdown-item">C/C++ Programming</a>
+						<a href="team.html" class="dropdown-item">Python Programming</a>
+						<a href="team.html" class="dropdown-item">Java Programming</a>
+						<a href="team.html" class="dropdown-item">Web Technologies</a>
+						<a href="team.html" class="dropdown-item">Data Structure</a>
+						<a href="team.html" class="dropdown-item">Android Programming</a>
+						<a href="team.html" class="dropdown-item">Oracle Certification (OCA)</a>
+                       
+                    </div>
+                </div>
+				<a href="courses.html" class="nav-item nav-link">Services</a>
+				<a href="courses.html" class="nav-item nav-link">Testimonials</a>
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">CONTACT US<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+        <!-- Hero Banner -->
+    <section class="course-hero">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-badge">🎓 Most Popular Course</div>
+                    <h1 class="hero-title">Master <span>MS Office</span><br>From Scratch to Pro</h1>
+                    <p class="hero-desc">
+                        Learn the world's most used productivity suite — Word, Excel, PowerPoint, Access & Outlook — with hands-on practice, real-world projects, and expert guidance at Prema Computer, Bhopal.
+                    </p>
+                    <div class="about-icon-row">
+                        <div class="about-chip"><i class="fa fa-clock"></i> 3 Months Duration</div>
+                        <div class="about-chip"><i class="fa fa-certificate"></i> Certificate Provided</div>
+                        <div class="about-chip"><i class="fa fa-laptop"></i> Practical Training</div>
+                        <div class="about-chip"><i class="fa fa-users"></i> Small Batches</div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-box"><div class="num">500+</div><div class="lbl">Students Trained</div></div>
+                        <div class="stat-box"><div class="num">5</div><div class="lbl">Applications Covered</div></div>
+                        <div class="stat-box"><div class="num">120+</div><div class="lbl">Hours of Practice</div></div>
+                        <div class="stat-box"><div class="num">100%</div><div class="lbl">Job Assistance</div></div>
+                    </div>
+                    <a href="#enroll" class="hero-enroll-btn">Enroll Now &nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Course -->
+    <section class="about-course">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="text-primary fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem;">Why This Course</p>
+                <h2 class="section-title">Course <span>Highlights</span></h2>
+            </div>
+            <div class="row g-4 fade-up">
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-1">
+                        <div class="icon">💼</div>
+                        <h5>Career-Ready Skills</h5>
+                        <p>Learn exactly what employers expect in office & administrative roles across industries.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-2">
+                        <div class="icon">🖥️</div>
+                        <h5>100% Practical Training</h5>
+                        <p>Every concept is taught with live practice on computers — no boring theory-only sessions.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-3">
+                        <div class="icon">👨‍🏫</div>
+                        <h5>Expert Instructors</h5>
+                        <p>Learn from certified professionals with 10+ years of industry and teaching experience.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-4">
+                        <div class="icon">🏅</div>
+                        <h5>Industry Certificate</h5>
+                        <p>Receive a recognized certificate from Prema Computer upon successful course completion.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-2 fade-up">
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-2">
+                        <div class="icon">📅</div>
+                        <h5>Flexible Batch Timings</h5>
+                        <p>Morning, afternoon, and evening batches available. Choose what fits your schedule.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-1">
+                        <div class="icon">📁</div>
+                        <h5>Study Material Included</h5>
+                        <p>Comprehensive printed notes, practice files, and exercise sheets provided free of cost.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-4">
+                        <div class="icon">🔁</div>
+                        <h5>Doubt Sessions</h5>
+                        <p>Regular doubt-clearing sessions ensure no student is left behind in their learning journey.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-3">
+                        <div class="icon">🚀</div>
+                        <h5>Placement Support</h5>
+                        <p>Resume building guidance and job placement assistance for eligible students after completion.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Section -->
+    <section class="curriculum-section" id="curriculum">
+        <div class="container">
+            <div class="text-center fade-up">
+                <p class="text-primary fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem;">What You Will Learn</p>
+                <h2 class="section-title">Complete Course <span>Curriculum</span></h2>
+                <div class="section-underline mx-auto"></div>
+                <p class="mt-3 text-muted" style="max-width:580px; margin:0 auto;">Click on any module below to explore the detailed topic-by-topic syllabus.</p>
+            </div>
+
+            <!-- Tabs -->
+            <div class="module-tabs fade-up">
+                <button class="module-tab active" onclick="showModule('word')">📝 MS Word</button>
+                <button class="module-tab" onclick="showModule('excel')">📊 MS Excel</button>
+                <button class="module-tab" onclick="showModule('powerpoint')">📽️ PowerPoint</button>
+                <button class="module-tab" onclick="showModule('access')">🗄️ MS Access</button>
+                <button class="module-tab" onclick="showModule('outlook')">📧 MS Outlook</button>
+            </div>
+
+            <!-- MS WORD -->
+            <div class="curriculum-panel active fade-up" id="panel-word">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#d44000;">📝</div>
+                    <div>
+                        <h3>Microsoft Word</h3>
+                        <p>Document creation, formatting, templates & advanced features</p>
+                    </div>
+                    <div class="mod-duration">⏱ 25 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Introduction to MS Word & Interface</div>
+                            <div class="topic-sub">Ribbon, Quick Access Toolbar, File Menu, View options</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Creating, Opening, Saving & Managing Documents</div>
+                            <div class="topic-sub">File formats (.docx, .pdf, .txt), AutoSave, Document versions</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Text Formatting & Typography</div>
+                            <div class="topic-sub">Font, size, bold, italic, underline, text color, highlighting, spacing</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Paragraph Formatting</div>
+                            <div class="topic-sub">Alignment, indentation, line spacing, borders & shading, bullets & numbering</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Page Layout & Design</div>
+                            <div class="topic-sub">Page size, margins, orientation, columns, page color & borders</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Tables — Creation & Advanced Formatting</div>
+                            <div class="topic-sub">Insert, merge/split cells, table styles, calculations in tables</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Working with Images, Shapes & SmartArt</div>
+                            <div class="topic-sub">Insert pictures, online images, shape formatting, text wrapping, SmartArt diagrams</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Headers, Footers & Page Numbers</div>
+                            <div class="topic-sub">Custom headers/footers, different first page, section breaks</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">9</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Styles, Themes & Templates</div>
+                            <div class="topic-sub">Heading styles, creating custom styles, document themes, built-in templates</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">10</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Mail Merge</div>
+                            <div class="topic-sub">Creating form letters, merging with Excel data, printing envelopes & labels</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">11</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Table of Contents & References</div>
+                            <div class="topic-sub">Auto-generated TOC, footnotes, endnotes, citations & bibliography</div>
+                        </div>
+                        <span class="topic-tag new">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">12</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Track Changes, Comments & Review</div>
+                            <div class="topic-sub">Collaborative editing, accepting/rejecting changes, document protection</div>
+                        </div>
+                        <span class="topic-tag new">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">13</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project: Professional Resume & Cover Letter</div>
+                            <div class="topic-sub">End-to-end document design project using all learned features</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MS EXCEL -->
+            <div class="curriculum-panel fade-up" id="panel-excel">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#1d6f42;">📊</div>
+                    <div>
+                        <h3>Microsoft Excel</h3>
+                        <p>Spreadsheets, formulas, data analysis & visualization</p>
+                    </div>
+                    <div class="mod-duration">⏱ 35 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Excel Interface & Navigation</div>
+                            <div class="topic-sub">Workbook, worksheets, cells, rows, columns, Name Box, Formula Bar</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Data Entry, Editing & AutoFill</div>
+                            <div class="topic-sub">Types of data, Fill Series, Flash Fill, custom lists</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Cell Formatting & Conditional Formatting</div>
+                            <div class="topic-sub">Number formats, cell styles, conditional formatting rules & color scales</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Essential Formulas & Functions</div>
+                            <div class="topic-sub">SUM, AVERAGE, COUNT, MAX, MIN, IF, AND, OR, COUNTA</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Text Functions</div>
+                            <div class="topic-sub">CONCATENATE, LEFT, RIGHT, MID, TRIM, UPPER, LOWER, LEN, FIND</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Lookup Functions</div>
+                            <div class="topic-sub">VLOOKUP, HLOOKUP, INDEX-MATCH, XLOOKUP</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Date & Time Functions</div>
+                            <div class="topic-sub">TODAY, NOW, DATE, YEAR, MONTH, DAY, DATEDIF, NETWORKDAYS</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Charts & Data Visualization</div>
+                            <div class="topic-sub">Bar, line, pie, combo charts — formatting, dynamic chart titles</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">9</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Sorting, Filtering & Data Validation</div>
+                            <div class="topic-sub">Multi-level sort, advanced filter, dropdown lists, data validation rules</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">10</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Pivot Tables & Pivot Charts</div>
+                            <div class="topic-sub">Creating pivot tables, slicers, grouping, calculated fields</div>
+                        </div>
+                        <span class="topic-tag new">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">11</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Print Settings & Page Setup</div>
+                            <div class="topic-sub">Print area, headers/footers, page breaks, scaling to fit</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">12</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project: Salary & Attendance Management Sheet</div>
+                            <div class="topic-sub">Real-world Excel project covering formulas, formatting, charts & pivot tables</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POWERPOINT -->
+            <div class="curriculum-panel fade-up" id="panel-powerpoint">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#b7472a;">📽️</div>
+                    <div>
+                        <h3>Microsoft PowerPoint</h3>
+                        <p>Presentations, slide design, animations & delivery</p>
+                    </div>
+                    <div class="mod-duration">⏱ 20 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">PowerPoint Interface & Slide Views</div>
+                            <div class="topic-sub">Normal, Slide Sorter, Reading, Presenter view, Notes pane</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Creating & Managing Slides</div>
+                            <div class="topic-sub">Add, delete, duplicate, rearrange, hide slides; slide layouts</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Text Boxes, Fonts & Paragraph Formatting</div>
+                            <div class="topic-sub">Text formatting, bullet styles, line spacing, text direction</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Design Themes & Slide Master</div>
+                            <div class="topic-sub">Applying themes, customizing Slide Master, consistent branding</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Images, Shapes, Icons & SmartArt</div>
+                            <div class="topic-sub">Insert & format media, group/align objects, SmartArt diagrams</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Charts & Tables in Presentations</div>
+                            <div class="topic-sub">Embed Excel charts, create tables, data-driven slides</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Slide Transitions</div>
+                            <div class="topic-sub">Applying, timing, and fine-tuning transition effects</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Animations & Motion Paths</div>
+                            <div class="topic-sub">Entrance, emphasis, exit animations; Animation Pane; motion paths</div>
+                        </div>
+                        <span class="topic-tag new">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">9</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Hyperlinks, Action Buttons & Audio/Video</div>
+                            <div class="topic-sub">Interactive navigation, embedding audio/video, online video</div>
+                        </div>
+                        <span class="topic-tag new">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">10</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Presenter Mode, Slide Show & Export</div>
+                            <div class="topic-sub">Presenter view, custom shows, export to PDF/video, printing handouts</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">11</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project: Company Profile Presentation</div>
+                            <div class="topic-sub">Design a complete 15-slide professional presentation with animations</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MS ACCESS -->
+            <div class="curriculum-panel fade-up" id="panel-access">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#9f2042;">🗄️</div>
+                    <div>
+                        <h3>Microsoft Access</h3>
+                        <p>Database design, queries, forms & reports</p>
+                    </div>
+                    <div class="mod-duration">⏱ 20 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Introduction to Databases & Access Interface</div>
+                            <div class="topic-sub">Database concepts, tables, relationships, Navigation Pane</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Creating Tables & Setting Data Types</div>
+                            <div class="topic-sub">Field types, primary key, field properties, input masks</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Table Relationships</div>
+                            <div class="topic-sub">One-to-one, one-to-many, referential integrity, Relationship window</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Queries — Select, Parameter & Action Queries</div>
+                            <div class="topic-sub">Design view, criteria, calculated fields, update/delete/append queries</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Forms — Design & Data Entry</div>
+                            <div class="topic-sub">Form Wizard, controls, subforms, form properties</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Reports — Generating & Formatting</div>
+                            <div class="topic-sub">Report Wizard, grouping & sorting, calculated fields, printing reports</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Macros & Basic Automation</div>
+                            <div class="topic-sub">Creating macros, assigning to buttons, simple automation workflows</div>
+                        </div>
+                        <span class="topic-tag new">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project: Student Records Management System</div>
+                            <div class="topic-sub">Full database project: tables, forms, queries & reports</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MS OUTLOOK -->
+            <div class="curriculum-panel fade-up" id="panel-outlook">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#0072c6;">📧</div>
+                    <div>
+                        <h3>Microsoft Outlook</h3>
+                        <p>Email management, calendar, contacts & productivity</p>
+                    </div>
+                    <div class="mod-duration">⏱ 10 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Setting Up Outlook & Account Configuration</div>
+                            <div class="topic-sub">Adding email accounts (POP3, IMAP, Exchange), profile setup</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Composing, Sending & Receiving Emails</div>
+                            <div class="topic-sub">CC/BCC, attachments, signatures, reply/reply-all/forward</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Organizing Inbox — Folders & Rules</div>
+                            <div class="topic-sub">Creating folders, rules, flags, categories, search filters</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Calendar — Scheduling & Meetings</div>
+                            <div class="topic-sub">Creating appointments, recurring events, meeting invites, reminders</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Contacts & Address Book</div>
+                            <div class="topic-sub">Creating contact groups, importing/exporting contacts, searching</div>
+                        </div>
+                        <span class="topic-tag">Basic</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Tasks, To-Do List & Notes</div>
+                            <div class="topic-sub">Creating tasks, assigning tasks, tracking progress, Outlook notes</div>
+                        </div>
+                        <span class="topic-tag adv">Intermediate</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Out of Office, Delegates & Professional Settings</div>
+                            <div class="topic-sub">Automatic replies, delegate access, Outlook best practices</div>
+                        </div>
+                        <span class="topic-tag new">Advanced</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tools Covered -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="text-primary fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem;">Software You Will Learn</p>
+                <h2 class="section-title">Applications <span>Covered</span></h2>
+                <div class="section-underline mx-auto"></div>
+            </div>
+            <div class="row g-4 fade-up">
+                <div class="col-6 col-md-4 col-lg-2-4">
+                    <div class="tool-card">
+                        <div class="tool-icon" style="background:#fff0eb;">📝</div>
+                        <h5>MS Word</h5>
+                        <p>Documents, reports & letters</p>
+                        <span class="tool-version">Office 2019/365</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4">
+                    <div class="tool-card">
+                        <div class="tool-icon" style="background:#edfaf2;">📊</div>
+                        <h5>MS Excel</h5>
+                        <p>Spreadsheets & data analysis</p>
+                        <span class="tool-version">Office 2019/365</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4">
+                    <div class="tool-card">
+                        <div class="tool-icon" style="background:#fef0ed;">📽️</div>
+                        <h5>PowerPoint</h5>
+                        <p>Presentations & slideshows</p>
+                        <span class="tool-version">Office 2019/365</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4">
+                    <div class="tool-card">
+                        <div class="tool-icon" style="background:#fdf0f5;">🗄️</div>
+                        <h5>MS Access</h5>
+                        <p>Database management</p>
+                        <span class="tool-version">Office 2019/365</span>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2-4">
+                    <div class="tool-card">
+                        <div class="tool-icon" style="background:#edf4ff;">📧</div>
+                        <h5>MS Outlook</h5>
+                        <p>Email & calendar management</p>
+                        <span class="tool-version">Office 2019/365</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Should Join -->
+    <section class="who-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="text-primary fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem;">Is This Course For You?</p>
+                <h2 class="section-title">Who Should <span>Enroll?</span></h2>
+                <div class="section-underline mx-auto"></div>
+            </div>
+            <div class="row g-4 fade-up">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#e8f9fb;">🎓</div>
+                        <h6>Students</h6>
+                        <p>10th, 12th & college students building job-ready skills</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#fff5e6;">👩‍💼</div>
+                        <h6>Job Seekers</h6>
+                        <p>Anyone looking to add computer skills to their resume</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#ffeaea;">🏢</div>
+                        <h6>Office Workers</h6>
+                        <p>Employees wanting to improve workplace productivity</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#edfaf2;">🏪</div>
+                        <h6>Business Owners</h6>
+                        <p>Small business owners managing accounts & communications</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#edf4ff;">👨‍🏫</div>
+                        <h6>Teachers</h6>
+                        <p>Educators creating digital learning materials & reports</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#f5f0ff;">🏠</div>
+                        <h6>Homemakers</h6>
+                        <p>Looking to enter the workforce with essential digital skills</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Learning Outcomes -->
+    <section class="outcomes-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 fade-up">
+                    <p class="fw-bold text-uppercase" style="color:var(--primary); letter-spacing:2px; font-size:.85rem;">After This Course</p>
+                    <h2 class="section-title" style="color:#fff;">What You'll Be <span>Able To Do</span></h2>
+                    <div class="section-underline" style="margin:12px 0 0;"></div>
+                    <p class="mt-4" style="color:#a8c7d8; line-height:1.8;">
+                        Upon completing the MS Office course at Prema Computer, you'll be fully equipped to handle all computer-related office tasks independently and professionally.
+                    </p>
+                </div>
+                <div class="col-lg-7 fade-up">
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Create professional letters, reports, resumes, and documents in MS Word with proper formatting</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Build spreadsheets with advanced formulas, pivot tables, and dynamic charts in MS Excel</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Design engaging, animated presentations in PowerPoint for meetings and academic work</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Create and manage databases, queries, and reports using MS Access</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Manage professional email communication, scheduling, and tasks using MS Outlook</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Apply for data entry, office assistant, MIS executive, and admin roles with confidence</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Earn an industry-recognized certificate to showcase your skills to employers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certification -->
+    <section class="cert-section" id="enroll">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-up">
+                    <div class="cert-card">
+                        <div class="cert-badge">🏅 Certificate of Completion</div>
+                        <h3 style="font-family:'Playfair Display',serif; font-weight:800; color:var(--dark); font-size:1.8rem;">Prema Computer<br>Certificate</h3>
+                        <p class="mt-3" style="color:#555; line-height:1.8;">
+                            Upon completing the MS Office course, students receive a signed certificate from <strong>Prema Computer</strong> — recognized by local employers, government offices, and private sector companies across Madhya Pradesh.
+                        </p>
+                        <ul class="mt-3" style="color:#555; padding-left:20px; line-height:2;">
+                            <li>Issued on successful course completion & assessment</li>
+                            <li>Signed and stamped by institute director</li>
+                            <li>Accepted for government & private job applications</li>
+                            <li>Verifiable from Prema Computer office</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up">
+                    <p class="text-primary fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem;">Get Started Today</p>
+                    <h2 class="section-title">Course <span>Details</span></h2>
+                    <div class="section-underline" style="margin:12px 0 24px;"></div>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr><th style="width:40%; background:#f8fbff;">Duration</th><td>3 Months (110+ Hours)</td></tr>
+                            <tr><th style="background:#f8fbff;">Mode</th><td>Offline — Classroom Training</td></tr>
+                            <tr><th style="background:#f8fbff;">Batch Size</th><td>Limited Seats (Small Batch)</td></tr>
+                            <tr><th style="background:#f8fbff;">Eligibility</th><td>10th Pass & Above (No prior computer knowledge needed)</td></tr>
+                            <tr><th style="background:#f8fbff;">Batches</th><td>Morning / Afternoon / Evening</td></tr>
+                            <tr><th style="background:#f8fbff;">Study Material</th><td>Included (Notes + Practice Files)</td></tr>
+                            <tr><th style="background:#f8fbff;">Certificate</th><td>Yes — On Successful Completion</td></tr>
+                        </tbody>
+                    </table>
+                    <a href="tel:+917552687474" class="hero-enroll-btn mt-2" style="margin-top:10px;">
+                        <i class="fa fa-phone me-2"></i> Call to Enquire: 0755-2687474
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="text-primary fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem;">Got Questions?</p>
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <div class="section-underline mx-auto"></div>
+            </div>
+            <div class="row justify-content-center fade-up">
+                <div class="col-lg-9">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Do I need any prior computer knowledge to join this course?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">No prior knowledge is needed. We start from the very basics — switching on a computer, using a mouse and keyboard — and progress to advanced topics. The course is designed for absolute beginners as well as those who want to fill gaps in their knowledge.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">What is the duration and fee of the MS Office course?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">The course duration is 3 months with 110+ hours of practical training. For current fee details and batch schedules, please contact us at +91-755-2687474 or visit our center at Indrapuri, Bhopal. We have affordable options with flexible payment plans.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Will I get a certificate after completing the course?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">Yes! Upon successfully completing the course and clearing the assessment, you will receive a certificate from Prema Computer. This certificate is recognized by employers in government offices, banks, and private companies throughout Madhya Pradesh.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Are there morning, evening or weekend batches available?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">Yes, we offer flexible batch timings including morning, afternoon, and evening batches on weekdays. Weekend options may also be available. Please call us to check the current schedule and available seats.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Which version of MS Office will be taught?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">We teach Microsoft Office 2019 and Microsoft 365 (Office 365). The concepts covered are applicable across all modern versions of MS Office. Students get hands-on practice on computers with the latest software installed.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Do you provide placement assistance after the course?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">Yes, we provide placement guidance including resume preparation, interview tips, and job referrals. While we cannot guarantee placement, we actively assist our students in connecting with local employers and job opportunities.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="fade-up">Ready to Start Your<br>Digital Career Journey?</h2>
+            <p class="fade-up mt-3">Join hundreds of students who have already transformed their careers with Prema Computer</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap mt-4 fade-up">
+                <a href="tel:+917552687474" class="cta-btn"><i class="fa fa-phone me-2"></i>Call Now</a>
+                <a href="mailto:upmanyua@premasoftware.com" class="hero-enroll-btn" style="margin-top:0; background:rgba(255,255,255,0.15); box-shadow:none; border: 2px solid rgba(255,255,255,0.4);">
+                    <i class="fa fa-envelope me-2"></i>Email Us
+                </a>
+            </div>
+            <p class="mt-4 fade-up" style="color:rgba(255,255,255,0.65); font-size:.9rem;">📍 35-B, Behind New Indian Coffee House, Opp BHEL Jublee Gate, Indrapuri, Bhopal - 462021</p>
+        </div>
+    </section>
+
+  
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+			<div class="col col-lg-3 col-md-3 col-sm-6">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="img/logo.png" alt>
+									<h5 style="margin-top: 20px; color: #c00000;">Prema Computer</h5>
+                                </div>
+                                <p style="margin-top: 20px;">
+                                 Empowering students with practical computer skills to build successful careers in the digital world.
+                                </p>
+                            </div>
+                        </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>	
+35-B,Behind New Indian coffee House,
+Opp BHEL Jublee Gate,Indrapuri,
+Bhopal - 462021 (Madhya Pradesh)
+INDIA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91-755-2687474, 4234760</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>upmanyua@premasoftware.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+					<p>Copyright &copy; Prema Computer | All Right Reserved.</p>
+                        
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Courses</a>
+                            <a href="">Services</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+	 <style>
+        /* 5-column layout helper */
+        @media (min-width: 992px) {
+            .col-lg-2-4 { flex: 0 0 20%; max-width: 20%; }
+        }
+        .btn-social { width: 38px; height: 38px; padding: 0; display: flex; align-items: center; justify-content: center; margin-right: 6px; }
+        .footer-menu a { margin-left: 16px; color: #aaa; text-decoration: none; font-size: .9rem; }
+        .footer-menu a:hover { color: var(--primary); }
+        .copyright { border-top: 1px solid rgba(255,255,255,0.08); padding: 20px 0; }
+        .btn-link { color: #aaa; text-decoration: none; display: block; padding: 3px 0; font-size: .9rem; }
+        .btn-link:hover { color: var(--primary); padding-left: 6px; }
+    </style>
+
+    <script>
+        // Module tab switching
+        function showModule(name) {
+            document.querySelectorAll('.curriculum-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.module-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById('panel-' + name).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        // FAQ toggle
+        function toggleFaq(el) {
+            const wasOpen = el.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+            if (!wasOpen) el.classList.add('open');
+        }
+
+        // Scroll animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        // Back to top
+        const backBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => {
+            backBtn.style.display = window.scrollY > 300 ? 'flex' : 'none';
+        });
+        backBtn.addEventListener('click', e => { e.preventDefault(); window.scrollTo({top:0, behavior:'smooth'}); });
+    </script>
+
+</body>
+
+</html>
