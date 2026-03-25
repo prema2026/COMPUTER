@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>MS Office Course - Prema Computer</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="MS Office Course, Word, Excel, PowerPoint, Bhopal" name="keywords">
+    <meta content="Learn MS Office at Prema Computer, Bhopal - Word, Excel, PowerPoint & more" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	
+	    <style>
+        :root {
+            --primary: #06BBCC;
+            --dark: #0d1b2a;
+            --accent: #1d6f42;
+            --gold: #f4a833;
+            --excel-green: #217346;
+            --excel-light: #e8f5ee;
+            --light-bg: #f5fdf8;
+        }
+
+        * { box-sizing: border-box; }
+
+        body { font-family: 'Heebo', sans-serif; background: #fff; color: #333; }
+
+        /* ── NAVBAR ── */
+        .navbar-brand span { font-family: 'Nunito', sans-serif; }
+
+        /* ── HERO ── */
+        .course-hero {
+            background: linear-gradient(135deg, #0a1f10 0%, #1a4a2e 55%, #217346 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0 60px;
+        }
+        .course-hero::before {
+            content: '';
+            position: absolute;
+            top: -100px; right: -100px;
+            width: 480px; height: 480px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(33,115,70,0.4) 0%, transparent 70%);
+        }
+        .course-hero::after {
+            content: 'XL';
+            position: absolute;
+            right: 4%;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 240px;
+            font-family: 'Playfair Display', serif;
+            font-weight: 800;
+            color: rgba(255,255,255,0.04);
+            line-height: 1;
+            pointer-events: none;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: var(--gold);
+            color: #0a1f10;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 5px 16px;
+            border-radius: 30px;
+            margin-bottom: 18px;
+        }
+        .hero-title {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #fff;
+            line-height: 1.15;
+        }
+        .hero-title span { color: #6fcf97; }
+        .hero-desc { color: #a8d5b8; font-size: 1.05rem; max-width: 580px; line-height: 1.8; }
+        .hero-stats { display: flex; gap: 32px; margin-top: 36px; flex-wrap: wrap; }
+        .stat-box .num { font-size: 2rem; font-weight: 800; color: #6fcf97; font-family: 'Nunito', sans-serif; line-height: 1; }
+        .stat-box .lbl { font-size: 0.78rem; color: #7ab890; text-transform: uppercase; letter-spacing: 1px; margin-top: 4px; }
+        .hero-enroll-btn {
+            margin-top: 36px;
+            background: var(--excel-green);
+            color: #fff;
+            padding: 14px 36px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1rem;
+            border: 2px solid rgba(255,255,255,0.2);
+            text-decoration: none;
+            display: inline-block;
+            transition: all 0.3s;
+            box-shadow: 0 8px 30px rgba(33,115,70,0.45);
+        }
+        .hero-enroll-btn:hover { background: #1a5c38; color: #fff; transform: translateY(-2px); }
+        .about-chip {
+            display: flex; align-items: center; gap: 8px;
+            background: rgba(255,255,255,0.1);
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 8px 16px; border-radius: 30px;
+            font-size: 0.87rem; font-weight: 600; color: #c8ecd8;
+        }
+        .about-chip i { color: #6fcf97; }
+        .about-icon-row { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
+
+        /* ── BREADCRUMB ── */
+        .breadcrumb-section { background: var(--light-bg); padding: 14px 0; border-bottom: 1px solid #cce8d8; }
+        .breadcrumb-item a { color: var(--excel-green); text-decoration: none; }
+        .breadcrumb-item.active { color: #666; }
+
+        /* ── SECTION TITLE ── */
+        .section-title { font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+        .section-title span { color: var(--excel-green); }
+        .section-underline { width: 60px; height: 4px; background: linear-gradient(90deg, var(--excel-green), var(--gold)); border-radius: 2px; margin: 12px auto 0; }
+
+        /* ── ABOUT / HIGHLIGHTS ── */
+        .about-course { padding: 70px 0; background: #fff; }
+        .highlight-card {
+            border: none; border-radius: 16px; padding: 28px 24px; height: 100%;
+            transition: transform 0.3s, box-shadow 0.3s; position: relative; overflow: hidden;
+        }
+        .highlight-card::before {
+            content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
+            background: linear-gradient(180deg, var(--excel-green), var(--gold)); border-radius: 4px 0 0 4px;
+        }
+        .highlight-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(33,115,70,0.12); }
+        .highlight-card.bg-1 { background: #f0faf4; }
+        .highlight-card.bg-2 { background: #fff8f0; }
+        .highlight-card.bg-3 { background: #f0f8ff; }
+        .highlight-card.bg-4 { background: #fdf5ff; }
+        .highlight-card .icon { font-size: 2rem; margin-bottom: 12px; }
+        .highlight-card h5 { font-family: 'Nunito', sans-serif; font-weight: 800; font-size: 1rem; color: var(--dark); }
+        .highlight-card p { font-size: 0.87rem; color: #666; margin: 0; line-height: 1.7; }
+
+        /* ── CURRICULUM ── */
+        .curriculum-section { padding: 70px 0; background: var(--light-bg); }
+        .module-tabs { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin: 36px 0 40px; }
+        .module-tab {
+            padding: 9px 22px; border-radius: 30px; border: 2px solid #b0ddc0;
+            background: #fff; color: #1a5c38; font-weight: 700; font-size: 0.85rem;
+            cursor: pointer; transition: all 0.25s;
+        }
+        .module-tab:hover, .module-tab.active {
+            background: var(--excel-green); border-color: var(--excel-green); color: #fff;
+            box-shadow: 0 4px 16px rgba(33,115,70,0.3);
+        }
+        .curriculum-panel { display: none; }
+        .curriculum-panel.active { display: block; }
+
+        .module-header {
+            background: linear-gradient(90deg, #0a1f10 0%, #1a4a2e 100%);
+            color: #fff; border-radius: 14px 14px 0 0;
+            padding: 22px 28px; display: flex; align-items: center; gap: 16px;
+        }
+        .module-header .mod-icon { width: 52px; height: 52px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+        .module-header h3 { font-family: 'Playfair Display', serif; font-size: 1.35rem; margin: 0; font-weight: 800; }
+        .module-header p { margin: 0; font-size: 0.85rem; color: #a8d5b8; }
+        .module-header .mod-duration { margin-left: auto; background: rgba(255,255,255,0.12); padding: 6px 14px; border-radius: 20px; font-size: 0.8rem; font-weight: 700; white-space: nowrap; }
+
+        .topic-list { background: #fff; border: 1px solid #cce8d8; border-top: none; border-radius: 0 0 14px 14px; overflow: hidden; }
+        .topic-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 24px; border-bottom: 1px solid #edf8f2; transition: background 0.2s; }
+        .topic-item:last-child { border-bottom: none; }
+        .topic-item:hover { background: #f5fdf8; }
+        .topic-num { min-width: 28px; height: 28px; border-radius: 50%; background: var(--excel-green); color: #fff; font-size: 0.72rem; font-weight: 700; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+        .topic-text { flex: 1; }
+        .topic-title { font-weight: 600; font-size: 0.95rem; color: var(--dark); margin-bottom: 2px; }
+        .topic-sub { font-size: 0.82rem; color: #888; }
+        .topic-tag { background: #e8f5ee; color: var(--excel-green); font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px; white-space: nowrap; align-self: center; }
+        .topic-tag.adv { background: #fff5e6; color: var(--gold); }
+        .topic-tag.new { background: #ffeaea; color: #c00000; }
+        .topic-tag.pro { background: #f0e8ff; color: #7b2d8b; }
+
+        /* ── TOOLS / FUNCTIONS ── */
+        .tools-section { padding: 70px 0; background: #fff; }
+        .func-card { background: var(--light-bg); border-radius: 14px; padding: 22px 20px; border: 1px solid #cce8d8; transition: all 0.3s; }
+        .func-card:hover { transform: translateY(-4px); border-color: var(--excel-green); box-shadow: 0 12px 30px rgba(33,115,70,0.1); background: #fff; }
+        .func-card .func-tag { font-size: 0.72rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: var(--excel-green); margin-bottom: 10px; display: block; }
+        .func-card h6 { font-family: 'Nunito', sans-serif; font-weight: 800; color: var(--dark); margin-bottom: 6px; font-size: 0.95rem; }
+        .func-card p { font-size: 0.82rem; color: #777; margin: 0; line-height: 1.6; }
+
+        /* ── WHO SHOULD JOIN ── */
+        .who-section { padding: 70px 0; background: var(--light-bg); }
+        .who-card { background: #fff; border-radius: 16px; padding: 28px 22px; text-align: center; box-shadow: 0 4px 20px rgba(0,0,0,0.05); transition: transform 0.3s; height: 100%; }
+        .who-card:hover { transform: translateY(-4px); }
+        .who-card .who-icon { width: 64px; height: 64px; border-radius: 50%; margin: 0 auto 16px; display: flex; align-items: center; justify-content: center; font-size: 1.8rem; }
+        .who-card h6 { font-family: 'Nunito', sans-serif; font-weight: 800; color: var(--dark); margin-bottom: 6px; }
+        .who-card p { font-size: 0.83rem; color: #777; margin: 0; }
+
+        /* ── OUTCOMES ── */
+        .outcomes-section { padding: 70px 0; background: linear-gradient(135deg, #0a1f10 0%, #1a4a2e 100%); }
+        .outcome-item { display: flex; gap: 16px; align-items: flex-start; margin-bottom: 20px; }
+        .outcome-item .check { width: 32px; height: 32px; border-radius: 50%; background: var(--excel-green); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: #fff; font-size: 0.9rem; }
+        .outcome-item p { margin: 0; color: #a8d5b8; font-size: 0.95rem; line-height: 1.6; padding-top: 4px; }
+
+        /* ── CERT ── */
+        .cert-section { padding: 70px 0; background: #fff; }
+        .cert-card { background: linear-gradient(135deg, #e8f5ee 0%, #fff 60%); border: 2px solid #b0ddc0; border-radius: 20px; padding: 40px 36px; position: relative; overflow: hidden; }
+        .cert-card::after { content: '★'; position: absolute; right: 30px; top: 20px; font-size: 80px; color: rgba(33,115,70,0.06); }
+        .cert-badge { display: inline-block; background: var(--gold); color: #0a1f10; font-size: 11px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; padding: 5px 16px; border-radius: 20px; margin-bottom: 16px; }
+
+        /* ── FAQ ── */
+        .faq-section { padding: 70px 0; background: var(--light-bg); }
+        .faq-item { background: #fff; border-radius: 12px; margin-bottom: 14px; border: 1px solid #cce8d8; overflow: hidden; }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; padding: 18px 22px; cursor: pointer; font-weight: 700; font-size: 0.95rem; color: var(--dark); gap: 12px; }
+        .faq-question .toggle-icon { width: 28px; height: 28px; border-radius: 50%; background: var(--light-bg); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 1rem; color: var(--excel-green); transition: transform 0.3s; }
+        .faq-answer { display: none; padding: 0 22px 18px; font-size: 0.9rem; color: #666; line-height: 1.8; }
+        .faq-item.open .toggle-icon { transform: rotate(45deg); }
+        .faq-item.open .faq-answer { display: block; }
+
+        /* ── CTA ── */
+        .cta-section { padding: 80px 0; background: linear-gradient(120deg, #217346 0%, #0a1f10 100%); text-align: center; }
+        .cta-section h2 { font-family: 'Playfair Display', serif; font-size: 2.4rem; color: #fff; font-weight: 800; }
+        .cta-section p { color: rgba(255,255,255,0.8); font-size: 1.05rem; }
+        .cta-btn { display: inline-block; background: var(--gold); color: #0a1f10; padding: 15px 42px; border-radius: 40px; font-weight: 800; font-size: 1.05rem; text-decoration: none; transition: all 0.3s; box-shadow: 0 8px 30px rgba(0,0,0,0.2); }
+        .cta-btn:hover { background: #e09820; color: #0a1f10; transform: translateY(-2px); }
+        .cta-outline { display: inline-block; padding: 15px 42px; border-radius: 40px; font-weight: 800; font-size: 1.05rem; text-decoration: none; transition: all 0.3s; background: rgba(255,255,255,0.12); border: 2px solid rgba(255,255,255,0.3); color: #fff; }
+        .cta-outline:hover { background: rgba(255,255,255,0.22); color: #fff; }
+
+        /* ── FOOTER ── */
+        .btn-social { width: 38px; height: 38px; padding: 0; display: flex; align-items: center; justify-content: center; margin-right: 6px; }
+        .footer-menu a { margin-left: 16px; color: #aaa; text-decoration: none; font-size: .9rem; }
+        .footer-menu a:hover { color: var(--primary); }
+        .copyright { border-top: 1px solid rgba(255,255,255,0.08); padding: 20px 0; }
+        .btn-link { color: #aaa; text-decoration: none; display: block; padding: 3px 0; font-size: .9rem; }
+        .btn-link:hover { color: var(--primary); padding-left: 6px; }
+
+        /* ── RESPONSIVE ── */
+        @media (max-width: 768px) {
+            .module-header { flex-wrap: wrap; }
+            .module-header .mod-duration { margin-left: 0; }
+            .hero-stats { gap: 20px; }
+            .course-hero::after { display: none; }
+        }
+
+        /* ── SCROLL ANIMATION ── */
+        .fade-up { opacity: 0; transform: translateY(30px); transition: opacity 0.6s ease, transform 0.6s ease; }
+        .fade-up.visible { opacity: 1; transform: translateY(0); }
+
+        /* 5-col grid */
+        @media (min-width: 992px) { .col-lg-2-4 { flex: 0 0 20%; max-width: 20%; } }
+    </style>
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+        <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+              <img src="img/logo.png" alt="Prema Logo" style="height:40px;">
+              <span class="ms-2 h2 m-0 text-primary">Prema Computer</span>
+        </a>
+        <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav ms-auto p-4 p-lg-0">
+                <a href="index.html" class="nav-item nav-link active">Home</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Courses</a>
+                    <div class="dropdown-menu fade-down m-0">
+                        <a href="msoffice.html" class="dropdown-item">MS Office</a>
+						<a href="team.html" class="dropdown-item">Advance Excel</a>
+						<a href="team.html" class="dropdown-item">Tally</a>
+						<a href="team.html" class="dropdown-item">C/C++ Programming</a>
+						<a href="team.html" class="dropdown-item">Python Programming</a>
+						<a href="team.html" class="dropdown-item">Java Programming</a>
+						<a href="team.html" class="dropdown-item">Web Technologies</a>
+						<a href="team.html" class="dropdown-item">Data Structure</a>
+						<a href="team.html" class="dropdown-item">Android Programming</a>
+						<a href="team.html" class="dropdown-item">Oracle Certification (OCA)</a>
+                       
+                    </div>
+                </div>
+				<a href="courses.html" class="nav-item nav-link">Services</a>
+				<a href="courses.html" class="nav-item nav-link">Testimonials</a>
+            </div>
+            <a href="" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">CONTACT US<i class="fa fa-arrow-right ms-3"></i></a>
+        </div>
+    </nav>
+    <!-- Navbar End -->
+
+        <!-- Hero -->
+    <section class="course-hero">
+        <div class="container position-relative">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <div class="hero-badge">📊 Power User Course</div>
+                    <h1 class="hero-title">Master <span>Advanced Excel</span><br>Data, Dashboards & Automation</h1>
+                    <p class="hero-desc">
+                        Go beyond basics — learn Power Formulas, Pivot Tables, Charts, Dashboards, Macros & VBA at Prema Computer, Bhopal. Transform raw data into powerful business insights.
+                    </p>
+                    <div class="about-icon-row">
+                        <div class="about-chip"><i class="fa fa-clock"></i> 2.5 Months Duration</div>
+                        <div class="about-chip"><i class="fa fa-certificate"></i> Certificate Provided</div>
+                        <div class="about-chip"><i class="fa fa-laptop"></i> Hands-on Projects</div>
+                        <div class="about-chip"><i class="fa fa-database"></i> Real Business Data</div>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-box"><div class="num">300+</div><div class="lbl">Students Trained</div></div>
+                        <div class="stat-box"><div class="num">8</div><div class="lbl">Modules</div></div>
+                        <div class="stat-box"><div class="num">100+</div><div class="lbl">Hours Practice</div></div>
+                        <div class="stat-box"><div class="num">50+</div><div class="lbl">Functions Covered</div></div>
+                    </div>
+                    <a href="#enroll" class="hero-enroll-btn">Enroll Now &nbsp;<i class="fa fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Highlights -->
+    <section class="about-course">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem; color:var(--excel-green);">Why This Course</p>
+                <h2 class="section-title">Course <span>Highlights</span></h2>
+                <div class="section-underline mx-auto"></div>
+            </div>
+            <div class="row g-4 fade-up">
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-1">
+                        <div class="icon">📈</div>
+                        <h5>Data Analysis Skills</h5>
+                        <p>Learn to analyze, filter, and summarize thousands of rows of data with ease using advanced techniques.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-2">
+                        <div class="icon">🤖</div>
+                        <h5>Macros & Automation</h5>
+                        <p>Automate repetitive tasks using Macros and VBA — save hours of manual work every week.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-3">
+                        <div class="icon">📊</div>
+                        <h5>Dashboard Creation</h5>
+                        <p>Build dynamic, interactive business dashboards with charts, slicers, and form controls.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-4">
+                        <div class="icon">🏅</div>
+                        <h5>Industry Certificate</h5>
+                        <p>Receive a recognized Prema Computer certificate valued by employers in MIS, finance & admin roles.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-4 mt-2 fade-up">
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-3">
+                        <div class="icon">🎯</div>
+                        <h5>Project-Based Learning</h5>
+                        <p>Each module ends with a real-world project — salary sheets, inventory trackers, sales dashboards.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-1">
+                        <div class="icon">📁</div>
+                        <h5>Practice Files Included</h5>
+                        <p>Get curated datasets and exercise workbooks to practise every concept taught in class.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-4">
+                        <div class="icon">⏰</div>
+                        <h5>Flexible Batches</h5>
+                        <p>Morning, afternoon, and evening batches to fit students, working professionals, and homemakers.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="highlight-card bg-2">
+                        <div class="icon">🚀</div>
+                        <h5>Placement Support</h5>
+                        <p>Resume guidance and job referrals for MIS Executive, Data Analyst, and Accounts roles.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="curriculum-section" id="curriculum">
+        <div class="container">
+            <div class="text-center fade-up">
+                <p class="fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem; color:var(--excel-green);">What You Will Learn</p>
+                <h2 class="section-title">Complete Course <span>Curriculum</span></h2>
+                <div class="section-underline mx-auto"></div>
+                <p class="mt-3 text-muted" style="max-width:600px; margin:0 auto;">Click any module to explore its detailed topic-by-topic syllabus.</p>
+            </div>
+
+            <div class="module-tabs fade-up">
+                <button class="module-tab active" onclick="showModule('formulas')">🔢 Power Formulas</button>
+                <button class="module-tab" onclick="showModule('data')">🗂️ Data Tools</button>
+                <button class="module-tab" onclick="showModule('pivot')">📊 Pivot Tables</button>
+                <button class="module-tab" onclick="showModule('charts')">📈 Charts & Dashboards</button>
+                <button class="module-tab" onclick="showModule('macros')">🤖 Macros & VBA</button>
+                <button class="module-tab" onclick="showModule('power')">⚡ Power Query</button>
+                <button class="module-tab" onclick="showModule('finance')">💰 Financial Tools</button>
+                <button class="module-tab" onclick="showModule('projects')">🎯 Projects</button>
+            </div>
+
+            <!-- POWER FORMULAS -->
+            <div class="curriculum-panel active fade-up" id="panel-formulas">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#1d6f42;">🔢</div>
+                    <div>
+                        <h3>Power Formulas & Functions</h3>
+                        <p>Master 50+ essential and advanced Excel functions for real business use</p>
+                    </div>
+                    <div class="mod-duration">⏱ 20 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Formula Fundamentals & Cell References</div>
+                            <div class="topic-sub">Relative, absolute ($), mixed references; formula auditing; tracing precedents/dependents</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Logical Functions</div>
+                            <div class="topic-sub">IF, nested IF, IFS, AND, OR, NOT, IFERROR, IFNA — with complex business conditions</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Lookup & Reference Functions</div>
+                            <div class="topic-sub">VLOOKUP, HLOOKUP, INDEX, MATCH, INDEX-MATCH combo, XLOOKUP, OFFSET, INDIRECT</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Text Functions</div>
+                            <div class="topic-sub">CONCATENATE, TEXTJOIN, LEFT, RIGHT, MID, FIND, SEARCH, SUBSTITUTE, TRIM, TEXT, VALUE</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Date & Time Functions</div>
+                            <div class="topic-sub">TODAY, NOW, DATE, EDATE, EOMONTH, DATEDIF, NETWORKDAYS, WORKDAY, WEEKDAY, WEEKNUM</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Statistical & Counting Functions</div>
+                            <div class="topic-sub">COUNTIF, COUNTIFS, SUMIF, SUMIFS, AVERAGEIF, AVERAGEIFS, LARGE, SMALL, RANK, PERCENTILE</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Math & Array Functions</div>
+                            <div class="topic-sub">SUMPRODUCT, ROUND, CEILING, FLOOR, MOD, SUBTOTAL, array formulas (Ctrl+Shift+Enter)</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Dynamic Array Functions (Excel 365)</div>
+                            <div class="topic-sub">FILTER, SORT, SORTBY, UNIQUE, SEQUENCE, RANDARRAY, SPILL behavior</div>
+                        </div>
+                        <span class="topic-tag new">New / 365</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">9</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Named Ranges & Dynamic Named Ranges</div>
+                            <div class="topic-sub">Defining names, Name Manager, using names in formulas, OFFSET-based dynamic ranges</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DATA TOOLS -->
+            <div class="curriculum-panel fade-up" id="panel-data">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#2c6e8a;">🗂️</div>
+                    <div>
+                        <h3>Data Management & Analysis Tools</h3>
+                        <p>Sort, filter, validate, and clean data like a professional analyst</p>
+                    </div>
+                    <div class="mod-duration">⏱ 15 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Advanced Sorting & Multi-level Sorting</div>
+                            <div class="topic-sub">Sort by multiple columns, sort by color, custom sort orders</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">AutoFilter & Advanced Filter</div>
+                            <div class="topic-sub">Filter by condition, text filters, number filters, date filters, copy filtered results</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Data Validation & Dropdown Lists</div>
+                            <div class="topic-sub">Dropdown lists, dependent dropdowns, custom validation rules, input messages, error alerts</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Conditional Formatting — Advanced</div>
+                            <div class="topic-sub">Formula-based rules, icon sets, data bars, color scales, managing rule priorities</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Remove Duplicates & Data Cleaning</div>
+                            <div class="topic-sub">Find & remove duplicates, Flash Fill, Text to Columns, TRIM/CLEAN, Find & Replace tricks</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Subtotals & Grouping</div>
+                            <div class="topic-sub">SUBTOTAL function, group/ungroup rows & columns, outline levels, collapsible sections</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">What-If Analysis</div>
+                            <div class="topic-sub">Goal Seek, Scenario Manager, Data Table (one-variable & two-variable)</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Excel Tables (Structured References)</div>
+                            <div class="topic-sub">Convert range to Table, structured references, table styles, auto-expansion</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">9</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Consolidate & Linking Workbooks</div>
+                            <div class="topic-sub">Consolidate data from multiple sheets, external references, managing links</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PIVOT TABLES -->
+            <div class="curriculum-panel fade-up" id="panel-pivot">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#7b2d8b;">📊</div>
+                    <div>
+                        <h3>Pivot Tables & Pivot Charts</h3>
+                        <p>Summarize thousands of rows instantly with Excel's most powerful feature</p>
+                    </div>
+                    <div class="mod-duration">⏱ 15 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Creating Pivot Tables from Scratch</div>
+                            <div class="topic-sub">Source data requirements, inserting PivotTable, field list navigation, layout options</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Rows, Columns, Values & Filters</div>
+                            <div class="topic-sub">Dragging fields, value field settings, show values as %, running totals, rank</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Grouping Data in Pivot Tables</div>
+                            <div class="topic-sub">Group dates by month/quarter/year, group numbers into ranges, custom grouping</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Slicers & Timeline Filters</div>
+                            <div class="topic-sub">Inserting slicers, timeline for date fields, connecting slicers to multiple pivot tables</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Calculated Fields & Calculated Items</div>
+                            <div class="topic-sub">Create custom formulas inside pivot tables, calculated items, solve order</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Pivot Table Styles & Formatting</div>
+                            <div class="topic-sub">PivotTable styles, conditional formatting on pivot, number formatting, blank handling</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Pivot Charts</div>
+                            <div class="topic-sub">Creating pivot charts, chart types, interactive filtering with slicers on charts</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">GETPIVOTDATA Function</div>
+                            <div class="topic-sub">Reference pivot data dynamically in formulas, custom GETPIVOTDATA expressions</div>
+                        </div>
+                        <span class="topic-tag new">Expert</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">9</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Data Model & Multiple Table Pivot</div>
+                            <div class="topic-sub">Add tables to Data Model, create relationships, pivot across multiple tables</div>
+                        </div>
+                        <span class="topic-tag new">Expert</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CHARTS & DASHBOARDS -->
+            <div class="curriculum-panel fade-up" id="panel-charts">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#c0392b;">📈</div>
+                    <div>
+                        <h3>Charts, Visualization & Dashboards</h3>
+                        <p>Turn raw numbers into stunning, interactive business dashboards</p>
+                    </div>
+                    <div class="mod-duration">⏱ 18 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Chart Types & When to Use Each</div>
+                            <div class="topic-sub">Column, bar, line, pie, donut, area, scatter, bubble, waterfall, funnel, histogram</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Advanced Chart Formatting</div>
+                            <div class="topic-sub">Custom colors, data labels, dual axes, secondary axis, trendlines, error bars</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Combo Charts & Dynamic Chart Titles</div>
+                            <div class="topic-sub">Combining chart types, linking chart title to a cell, dynamic label formulas</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Sparklines</div>
+                            <div class="topic-sub">Line, column, win/loss sparklines; formatting; axis options; in-cell mini charts</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Dynamic & Interactive Charts</div>
+                            <div class="topic-sub">OFFSET-based dynamic ranges, dropdown-controlled charts, camera tool, named range charts</div>
+                        </div>
+                        <span class="topic-tag new">Expert</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Form Controls for Dashboards</div>
+                            <div class="topic-sub">Combo Box, Scroll Bar, Spin Button, Check Box, Option Button — linked to cells</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Dashboard Layout & Design Principles</div>
+                            <div class="topic-sub">KPI cards, layout grids, color consistency, hiding gridlines, camera snapshots</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project: Interactive Sales Dashboard</div>
+                            <div class="topic-sub">Build a full multi-KPI dashboard with slicers, charts, dropdown filters & summary cards</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MACROS & VBA -->
+            <div class="curriculum-panel fade-up" id="panel-macros">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#8b5a00;">🤖</div>
+                    <div>
+                        <h3>Macros & VBA Programming</h3>
+                        <p>Automate Excel tasks and build custom tools with Visual Basic for Applications</p>
+                    </div>
+                    <div class="mod-duration">⏱ 20 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Introduction to Macros & the Macro Recorder</div>
+                            <div class="topic-sub">Recording, running, editing macros; relative vs absolute recording; macro security</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">VBA Editor (VBE) Introduction</div>
+                            <div class="topic-sub">Module types, Project Explorer, Properties window, Immediate window, breakpoints</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">VBA Fundamentals</div>
+                            <div class="topic-sub">Variables, data types, constants, operators, commenting, MsgBox & InputBox</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Control Structures</div>
+                            <div class="topic-sub">If-Then-Else, Select Case, For-Next, Do-While, Do-Until, nested loops</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Working with Cells, Ranges & Sheets</div>
+                            <div class="topic-sub">Range, Cells, Offset, Rows, Columns objects; reading & writing cell values; sheet operations</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Sub Procedures & Functions</div>
+                            <div class="topic-sub">Writing Subs and Functions, parameters, return values, calling procedures, UDFs</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Error Handling in VBA</div>
+                            <div class="topic-sub">On Error GoTo, On Error Resume Next, Err object, debugging techniques</div>
+                        </div>
+                        <span class="topic-tag pro">Pro</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">8</div>
+                        <div class="topic-text">
+                            <div class="topic-title">UserForms & Custom Dialog Boxes</div>
+                            <div class="topic-sub">Building UserForms, controls (TextBox, ComboBox, ListBox), form events</div>
+                        </div>
+                        <span class="topic-tag pro">Pro</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">9</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Working with Files & Workbooks via VBA</div>
+                            <div class="topic-sub">Open/close/save workbooks, loop through files in a folder, copy sheets, export to PDF</div>
+                        </div>
+                        <span class="topic-tag pro">Pro</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">10</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project: Automated Report Generator</div>
+                            <div class="topic-sub">Build a macro-driven tool to auto-generate and format monthly reports from raw data</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- POWER QUERY -->
+            <div class="curriculum-panel fade-up" id="panel-power">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#0063b1;">⚡</div>
+                    <div>
+                        <h3>Power Query (Get & Transform)</h3>
+                        <p>Import, clean, and transform data from any source without writing formulas</p>
+                    </div>
+                    <div class="mod-duration">⏱ 12 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Introduction to Power Query & the Query Editor</div>
+                            <div class="topic-sub">Launching Query Editor, interface overview, applied steps, M formula language basics</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Importing Data from Multiple Sources</div>
+                            <div class="topic-sub">From Excel, CSV/TXT, folders (combine files), web pages, databases</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Data Cleaning in Power Query</div>
+                            <div class="topic-sub">Remove duplicates, trim spaces, replace values, fill down/up, change data types</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Transformations — Split, Merge & Pivot Columns</div>
+                            <div class="topic-sub">Split by delimiter, merge columns, pivot/unpivot columns, transpose</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Appending & Merging Queries</div>
+                            <div class="topic-sub">Append (union), merge (join) queries — inner, left outer, right outer, full outer joins</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Custom Columns & Conditional Columns</div>
+                            <div class="topic-sub">Add custom formula columns, conditional column logic, index columns</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">7</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Refresh & Automation</div>
+                            <div class="topic-sub">Refreshing queries, connection only queries, load to Table/Data Model, parameters</div>
+                        </div>
+                        <span class="topic-tag pro">Pro</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FINANCIAL TOOLS -->
+            <div class="curriculum-panel fade-up" id="panel-finance">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#b8860b;">💰</div>
+                    <div>
+                        <h3>Financial & Business Functions</h3>
+                        <p>Excel tools used in accounting, banking, HR, and business operations</p>
+                    </div>
+                    <div class="mod-duration">⏱ 10 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">EMI & Loan Calculations</div>
+                            <div class="topic-sub">PMT, PPMT, IPMT, NPER, RATE functions — calculate loan EMIs, interest & principal</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Depreciation Functions</div>
+                            <div class="topic-sub">SLN, DB, DDB, SYD — straight line and reducing balance depreciation</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Investment Analysis — NPV & IRR</div>
+                            <div class="topic-sub">NPV, XNPV, IRR, XIRR, MIRR — net present value and internal rate of return</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Salary Sheet with Tax & Deductions</div>
+                            <div class="topic-sub">Build a complete payroll sheet — basic, HRA, TA, PF, TDS calculations using formulas</div>
+                        </div>
+                        <span class="topic-tag">Core</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Budget vs Actual Analysis</div>
+                            <div class="topic-sub">Variance analysis, percentage achievement, traffic light indicators using conditional formatting</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Aging Analysis & Accounts Receivable</div>
+                            <div class="topic-sub">Debtor aging buckets (0-30, 31-60, 61-90, 90+), outstanding dues tracker</div>
+                        </div>
+                        <span class="topic-tag adv">Advanced</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROJECTS -->
+            <div class="curriculum-panel fade-up" id="panel-projects">
+                <div class="module-header">
+                    <div class="mod-icon" style="background:#6a1b9a;">🎯</div>
+                    <div>
+                        <h3>Real-World Projects</h3>
+                        <p>Apply everything you've learned to build actual business tools from scratch</p>
+                    </div>
+                    <div class="mod-duration">⏱ 10 Hours</div>
+                </div>
+                <div class="topic-list">
+                    <div class="topic-item">
+                        <div class="topic-num">1</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project 1: Payroll Management System</div>
+                            <div class="topic-sub">Full salary sheet with attendance, leave, overtime, PF, ESI, TDS & net pay — with print setup</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">2</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project 2: Sales Dashboard</div>
+                            <div class="topic-sub">Interactive KPI dashboard with pivot charts, slicers, month-wise comparisons & regional breakdown</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">3</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project 3: Inventory Management Tracker</div>
+                            <div class="topic-sub">Stock in/out tracker, low stock alerts using conditional formatting, reorder level formulas</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">4</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project 4: Student Marks & Grade Analysis</div>
+                            <div class="topic-sub">Marks sheet with auto-grade, rank, pass/fail, performance charts, and report card printing</div>
+                        </div>
+                        <span class="topic-tag new">Project</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">5</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Project 5: Automated Report Generator (VBA)</div>
+                            <div class="topic-sub">Macro-driven tool that reads raw data and auto-generates formatted monthly reports</div>
+                        </div>
+                        <span class="topic-tag pro">VBA Project</span>
+                    </div>
+                    <div class="topic-item">
+                        <div class="topic-num">6</div>
+                        <div class="topic-text">
+                            <div class="topic-title">Final Assessment</div>
+                            <div class="topic-sub">Comprehensive practical test covering formulas, pivot tables, charts, and problem solving</div>
+                        </div>
+                        <span class="topic-tag adv">Assessment</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Functions Covered -->
+    <section class="tools-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem; color:var(--excel-green);">50+ Functions Covered</p>
+                <h2 class="section-title">Key Skills & <span>Functions</span></h2>
+                <div class="section-underline mx-auto"></div>
+            </div>
+            <div class="row g-4 fade-up">
+                <div class="col-md-6 col-lg-4">
+                    <div class="func-card">
+                        <span class="func-tag">Lookup & Reference</span>
+                        <h6>VLOOKUP / XLOOKUP / INDEX-MATCH</h6>
+                        <p>Find and retrieve data from large tables automatically — the most used Excel skill in job requirements.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="func-card">
+                        <span class="func-tag">Conditional Logic</span>
+                        <h6>IF / IFS / IFERROR / AND / OR</h6>
+                        <p>Build smart formulas that make decisions based on data — grade systems, alerts, dynamic results.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="func-card">
+                        <span class="func-tag">Aggregation</span>
+                        <h6>SUMIFS / COUNTIFS / AVERAGEIFS</h6>
+                        <p>Summarize data based on multiple conditions — essential for sales reports and data analysis.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="func-card">
+                        <span class="func-tag">Text Handling</span>
+                        <h6>TEXTJOIN / LEFT / MID / SUBSTITUTE</h6>
+                        <p>Clean, combine and extract text from messy data — critical for data cleaning and reporting.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="func-card">
+                        <span class="func-tag">Date & Time</span>
+                        <h6>DATEDIF / NETWORKDAYS / EDATE</h6>
+                        <p>Calculate age, tenure, deadlines, due dates and working days for HR and finance sheets.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="func-card">
+                        <span class="func-tag">Dynamic Arrays</span>
+                        <h6>FILTER / SORT / UNIQUE / SEQUENCE</h6>
+                        <p>Excel 365 functions that automatically spill results — powerful for dynamic reporting.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Who Should Join -->
+    <section class="who-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem; color:var(--excel-green);">Is This Course For You?</p>
+                <h2 class="section-title">Who Should <span>Enroll?</span></h2>
+                <div class="section-underline mx-auto"></div>
+            </div>
+            <div class="row g-4 fade-up">
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#e8f5ee;">📊</div>
+                        <h6>MIS Executives</h6>
+                        <p>Build powerful reports and dashboards for management</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#fff5e6;">💼</div>
+                        <h6>Accountants</h6>
+                        <p>Automate financial calculations, ledgers & P&L reports</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#ffeaea;">🎓</div>
+                        <h6>Students</h6>
+                        <p>Add a high-demand skill to your resume before placement</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#edf4ff;">👩‍💼</div>
+                        <h6>HR Professionals</h6>
+                        <p>Manage payroll, attendance, appraisals & HR analytics</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#f5f0ff;">🏪</div>
+                        <h6>Business Owners</h6>
+                        <p>Track inventory, sales, expenses and profit with ease</p>
+                    </div>
+                </div>
+                <div class="col-6 col-md-4 col-lg-2">
+                    <div class="who-card">
+                        <div class="who-icon" style="background:#fff8e1;">📈</div>
+                        <h6>Data Analysts</h6>
+                        <p>Anyone looking to step into analytics & data-driven roles</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Outcomes -->
+    <section class="outcomes-section">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-5 fade-up">
+                    <p class="fw-bold text-uppercase" style="color:#6fcf97; letter-spacing:2px; font-size:.85rem;">After This Course</p>
+                    <h2 class="section-title" style="color:#fff;">What You'll Be <span style="color:#6fcf97;">Able To Do</span></h2>
+                    <div class="section-underline" style="margin:12px 0 0; background: linear-gradient(90deg,#6fcf97,var(--gold));"></div>
+                    <p class="mt-4" style="color:#a8d5b8; line-height:1.8;">
+                        Advanced Excel is one of the most in-demand skills in India's job market. After this course, you'll be able to handle data-heavy tasks that most employees struggle with.
+                    </p>
+                </div>
+                <div class="col-lg-7 fade-up">
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Write complex nested formulas using IF, VLOOKUP, INDEX-MATCH and array functions</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Build interactive dashboards with pivot tables, slicers, and dynamic charts</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Automate repetitive tasks using Macros and write basic VBA programs</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Import and clean messy data from multiple sources using Power Query</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Create payroll sheets, inventory trackers, and financial analysis models</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Apply for MIS Executive, Data Analyst, Finance Executive, and Accounts roles</p>
+                    </div>
+                    <div class="outcome-item">
+                        <div class="check"><i class="fa fa-check"></i></div>
+                        <p>Earn a recognized certificate that proves your Excel expertise to employers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cert & Details -->
+    <section class="cert-section" id="enroll">
+        <div class="container">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 fade-up">
+                    <div class="cert-card">
+                        <div class="cert-badge">🏅 Certificate of Completion</div>
+                        <h3 style="font-family:'Playfair Display',serif; font-weight:800; color:var(--dark); font-size:1.8rem;">Prema Computer<br>Advanced Excel Certificate</h3>
+                        <p class="mt-3" style="color:#555; line-height:1.8;">
+                            Students who complete the course and pass the practical assessment receive a signed certificate from <strong>Prema Computer</strong> — recognised by employers in MIS, finance, accounts, and data roles across Madhya Pradesh.
+                        </p>
+                        <ul class="mt-3" style="color:#555; padding-left:20px; line-height:2;">
+                            <li>Issued after course completion & practical test</li>
+                            <li>Signed and stamped by institute director</li>
+                            <li>Valued by government & private sector employers</li>
+                            <li>Verifiable from Prema Computer office</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-up">
+                    <p class="fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem; color:var(--excel-green);">Get Started Today</p>
+                    <h2 class="section-title">Course <span>Details</span></h2>
+                    <div class="section-underline" style="margin:12px 0 24px;"></div>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr><th style="width:40%; background:var(--light-bg);">Duration</th><td>2.5 Months (100+ Hours)</td></tr>
+                            <tr><th style="background:var(--light-bg);">Mode</th><td>Offline — Classroom Training</td></tr>
+                            <tr><th style="background:var(--light-bg);">Batch Size</th><td>Limited Seats (Small Batch)</td></tr>
+                            <tr><th style="background:var(--light-bg);">Eligibility</th><td>Basic Computer Knowledge / MS Office Basics Recommended</td></tr>
+                            <tr><th style="background:var(--light-bg);">Batches</th><td>Morning / Afternoon / Evening</td></tr>
+                            <tr><th style="background:var(--light-bg);">Study Material</th><td>Included (Notes + Practice Workbooks + Datasets)</td></tr>
+                            <tr><th style="background:var(--light-bg);">Projects</th><td>5 Real-World Projects</td></tr>
+                            <tr><th style="background:var(--light-bg);">Certificate</th><td>Yes — On Successful Completion</td></tr>
+                        </tbody>
+                    </table>
+                    <a href="tel:+917552687474" class="hero-enroll-btn" style="margin-top:10px; background:var(--excel-green);">
+                        <i class="fa fa-phone me-2"></i> Call to Enquire: 0755-2687474
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="text-center mb-5 fade-up">
+                <p class="fw-bold text-uppercase" style="letter-spacing:2px; font-size:.85rem; color:var(--excel-green);">Got Questions?</p>
+                <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+                <div class="section-underline mx-auto"></div>
+            </div>
+            <div class="row justify-content-center fade-up">
+                <div class="col-lg-9">
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Do I need to know MS Excel basics before joining?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">Basic familiarity with Excel (opening files, entering data, simple SUM formulas) is recommended. If you are completely new to Excel, we suggest first completing our MS Office course which covers Excel basics, or we can arrange a short bridge session at the start.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">What jobs can I get after completing this course?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">Advanced Excel is required for roles like MIS Executive, Data Analyst, Accounts Executive, Finance Assistant, Operations Analyst, HR Executive, and Back Office Executive. Many government and banking sector roles also require advanced Excel proficiency.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Is VBA / Macro programming included in this course?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">Yes! Macros and VBA is a full module (20 hours) in this course. You will learn to record macros, write VBA code, create custom functions (UDFs), build UserForms, and automate report generation — all from scratch.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Which Excel version will be used for training?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">We primarily teach on Microsoft Excel 2019 and Microsoft 365. Dynamic array functions (FILTER, XLOOKUP etc.) are taught separately as Excel 365 features and clearly marked. All core concepts apply to Excel 2016, 2019, and 365.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">How is Advance Excel different from the MS Office Excel module?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">The MS Office course covers Excel basics — data entry, simple formulas, basic charts, and formatting. The Advance Excel course goes much deeper — complex formulas (VLOOKUP, SUMIFS, array formulas), Pivot Tables with Slicers, Dashboard building, Power Query, Macros, VBA, and real business projects. It is designed to make you an Excel power user.</div>
+                    </div>
+                    <div class="faq-item" onclick="toggleFaq(this)">
+                        <div class="faq-question">Are there morning, evening, or weekend batches?<div class="toggle-icon">+</div></div>
+                        <div class="faq-answer">Yes, multiple batch timings are available including morning, afternoon, and evening batches on weekdays. Weekend batches may be available based on demand. Please call us at 0755-2687474 to check current schedules and available seats.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2 class="fade-up">Become an Excel Expert.<br>Stand Out in Every Interview.</h2>
+            <p class="fade-up mt-3">Join Prema Computer's Advanced Excel batch and transform your career prospects</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap mt-4 fade-up">
+                <a href="tel:+917552687474" class="cta-btn"><i class="fa fa-phone me-2"></i>Call Now</a>
+                <a href="mailto:upmanyua@premasoftware.com" class="cta-outline"><i class="fa fa-envelope me-2"></i>Email Us</a>
+            </div>
+            <p class="mt-4 fade-up" style="color:rgba(255,255,255,0.65); font-size:.9rem;">📍 35-B, Behind New Indian Coffee House, Opp BHEL Jublee Gate, Indrapuri, Bhopal - 462021</p>
+        </div>
+    </section>
+
+  
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container py-5">
+            <div class="row g-5">
+			<div class="col col-lg-3 col-md-3 col-sm-6">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    <img src="img/logo.png" alt>
+									<h5 style="margin-top: 20px; color: #c00000;">Prema Computer</h5>
+                                </div>
+                                <p style="margin-top: 20px;">
+                                 Empowering students with practical computer skills to build successful careers in the digital world.
+                                </p>
+                            </div>
+                        </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Quick Link</h4>
+                    <a class="btn btn-link" href="">About Us</a>
+                    <a class="btn btn-link" href="">Contact Us</a>
+                    <a class="btn btn-link" href="">Privacy Policy</a>
+                    <a class="btn btn-link" href="">Terms & Condition</a>
+                    <a class="btn btn-link" href="">FAQs & Help</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Contact</h4>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>	
+35-B,Behind New Indian coffee House,
+Opp BHEL Jublee Gate,Indrapuri,
+Bhopal - 462021 (Madhya Pradesh)
+INDIA</p>
+                    <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+91-755-2687474, 4234760</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>upmanyua@premasoftware.com</p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="text-white mb-3">Newsletter</h4>
+                    <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                    <div class="position-relative mx-auto" style="max-width: 400px;">
+                        <input class="form-control border-0 w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+					<p>Copyright &copy; Prema Computer | All Right Reserved.</p>
+                        
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="">Home</a>
+                            <a href="">Courses</a>
+                            <a href="">Services</a>
+                            <a href="">FQAs</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+	
+
+    <script>
+        function showModule(name) {
+            document.querySelectorAll('.curriculum-panel').forEach(p => p.classList.remove('active'));
+            document.querySelectorAll('.module-tab').forEach(t => t.classList.remove('active'));
+            document.getElementById('panel-' + name).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function toggleFaq(el) {
+            const wasOpen = el.classList.contains('open');
+            document.querySelectorAll('.faq-item').forEach(f => f.classList.remove('open'));
+            if (!wasOpen) el.classList.add('open');
+        }
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+        const backBtn = document.querySelector('.back-to-top');
+        window.addEventListener('scroll', () => { backBtn.style.display = window.scrollY > 300 ? 'flex' : 'none'; });
+        backBtn.addEventListener('click', e => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); });
+    </script>
+
+</body>
+
+</html>
